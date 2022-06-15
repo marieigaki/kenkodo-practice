@@ -1,0 +1,481 @@
+@charset "utf-8";
+
+/*=======================共通設定===============================*/
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+    color: #3c3c3c;
+    background-color: #f4f3f3;
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #24292E;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*=======================header=========================*/
+
+.big-bg {
+    background-image: url(../images/header-back.jpg);
+    min-width: 100vh;
+    background-size: cover;
+    background-position: center top;
+    padding: 50px 0;
+}
+
+.full img {
+    display: block;
+    padding-top: 78px;
+    margin: 0 auto 102px auto;
+    max-width: 343px;
+}
+
+.gnavi_list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    padding: 0 100px 60px 100px;
+}
+
+nav .gnavi__item {
+display: block;
+}
+
+.gnavi_link {
+    color: #fff;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 30px 10px;
+    
+}
+
+.gnavi_link:hover {
+    background: linear-gradient(-135deg, #007215, #dbbe9c);
+    transition: all .5s ease;
+    
+}
+
+.fadein:hover{
+    animation-name:fadeInAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes fadeInAnime{
+      from {
+        opacity: 0;
+      }
+    
+      to {
+        opacity: 1;
+      }
+    }
+
+/*=====================#about=======================*/
+#about {
+    padding-top: 150px;
+    margin-bottom: 150px;
+}
+
+.about_box {
+    display: flex;
+}
+
+.about_pic img{
+    max-width: 374px;
+    margin-right: 122px;
+}
+
+.tate {
+    writing-mode: vertical-rl;
+    line-height: 35px;
+}
+
+.tate h2 {
+    margin-left: 78px;
+}
+
+.tate p {
+    margin-left: 33px;
+}
+
+/*======================#veg=======================*/
+#veg {
+    background-image: url(../images/veg-back.jpg);
+    background-size: cover;
+}
+
+.veg_title {
+    max-width: 355px;
+    display: block;
+    margin: 0 auto;
+    padding:150px 0 50px 0;
+}
+
+.veg_box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 150px;
+}
+
+.veg_pic {
+    max-width: 284px;
+}
+
+.veg_item {
+    background-color: #fff;
+    }
+
+h3 {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 22px;
+    font-weight: Medium;
+    padding: 31px 0 10px 0;
+    }
+
+.veg_item p {
+    margin-bottom: 31px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/*=======================#CAFE=======================*/
+#cafe {
+    background-color: #efd3c5;
+    padding-bottom: 150px;
+}
+
+.cafe_box {
+    padding-top: 150px;
+}
+
+.content img {
+    max-width: 774px;
+    height: 100%;
+}
+
+.slideshow {
+    display: flex;
+    animation: loop-slide 90s infinite  linear 1s both;
+}
+
+@keyframes loop-slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    height: 450px;
+    overflow: hidden;
+}
+
+.slide-paused:hover .slideshow {
+    animation-play-state: paused;
+  }
+
+.cafetitle {
+    padding: 51px 0 50px 0;
+    font-size: 22px;
+}
+
+.cafetext{
+    font-size: 15px;
+    margin-bottom: 54px;
+}
+
+.menu_box {
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.menu_box a {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.menu_box a:hover {
+    background: linear-gradient(-135deg, #007215, #dbbe9c);
+    transition: all .5s ease;
+    color: #fff;
+}
+
+.menu_icon_1 {
+    max-width: 128px;
+    vertical-align: -30px;
+}
+
+.menu_icon_2 {
+    max-width: 145px;
+    vertical-align: -30px;
+}
+
+/*=================#teikibin==================*/
+#teikibin {
+    padding-top: 150px;
+}
+
+#teikibin h2{
+    text-align: center;
+}
+
+.teiki_box {
+    display: flex;
+    padding-top: 65px;
+    justify-content: space-between;
+}
+
+.teiki_veg {
+    max-width: 376px;
+    height: 100%;
+}
+
+.teiki_text {
+    padding: 77px 0 54px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.teiki_link {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 150px;
+    padding: 20px;
+}
+
+.teiki_link:hover {
+    background: linear-gradient(-135deg, #007215, #dbbe9c);
+    transition: all .5s ease;
+    color: #fff;
+}
+
+
+/*=================footer===================*/
+footer {
+    background-color: #347330;
+}
+
+.unnav {
+    display: flex;
+    padding-top: 125px;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.unlogo {
+    max-width: 218px;
+}
+
+.unnav p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: medium;
+    padding:16px 0 0 60px;
+}
+
+.unnav_container img{
+    max-width: 205px;
+    padding-bottom: 16px;
+}
+
+.unnav_item {
+    list-style-type: none;
+    margin-bottom: 16px;
+}
+.unnav_link {
+    color: #fff;
+    font-size: 16px;
+    font-weight: medium;
+}
+
+.unnav_link:hover {
+    color: #efd3c5;
+}
+
+.copy {
+    padding: 42px 0;
+    background-color: #264327;
+}
+
+.copy p {
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+}
+
+/*=================-レスポンシブ設定=================*/
+
+@media (max-width: 768px) {
+    .wrapper {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .splash_logo {
+        max-width: 500px;
+    }
+
+    .gnavi_list {
+        flex-direction: column;
+        background-color: #007215;
+        padding: 0;
+    }
+
+    .gnavi_item {
+        text-align: center;
+        padding: 10px;
+        border: #264327 1px solid;
+        width: 100%;
+    }
+
+    .gnavi_link:hover {
+        color: #efd3c5;
+        background: rgba(255, 255, 255, 0);
+        border-radius: 0;
+    }
+
+    .gnavi_link {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    #about {
+        padding-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .about_pic img{
+        margin-right: 50px;
+        max-width: 300px;
+    }
+
+    .tate {
+        writing-mode: horizontal-tb;
+    }
+
+    .tate h2 {
+        margin-left: 0px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .tate p {
+        margin-left: 0px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .veg_title {
+        max-width: 250px;
+        display: block;
+        margin: 0 auto;
+        padding:70px 0 25px 0;
+    }
+
+    .veg_box {
+        flex-direction: column;
+        padding-bottom: 50px;
+        max-width: 284px;
+    }
+
+    .veg_pic img{
+        max-width: 284px;
+    }
+    
+    .veg_item {
+        background-color: #fff;
+        text-align: center;
+        margin-bottom: 30px;
+        }
+    
+    h3 {
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        font-weight: Medium;
+        padding: 15px 0 5px 0;
+        }
+    
+    .veg_item p {
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .cafetitle {
+        font-size: 20px;
+        padding: 30px 0;
+    }
+
+    #cafe {
+        padding-bottom: 50px;
+    }
+
+    #teikibin {
+        padding-top: 50px;
+    }
+
+    #teikibin h2 {
+        font-size: 20px;
+    }
+
+    .teiki_box {
+        padding-top: 40px;
+    }
+
+    .teiki_veg {
+        max-width: 300px;
+        height: 100%;
+    }
+
+    .teiki_text {
+        padding: 0 0 30px 20px;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .teiki_link {
+        margin-bottom: 50px;
+    }
+}
