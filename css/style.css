@@ -1,9 +1,9 @@
 @charset "utf-8";
 
 /*=======================共通設定===============================*/
-html {
+/* html {
     font-size: 100%;
-}
+} */
 
 body {
     font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
@@ -42,7 +42,6 @@ p {
 
 .big-bg {
     background-image: url(../images/header-back.jpg);
-    min-width: 100vh;
     background-size: cover;
     background-position: center top;
     padding: 50px 0;
@@ -477,5 +476,82 @@ footer {
 
     .teiki_link {
         margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 520px) {
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .big-bg {
+        padding-bottom: 0;
+    }
+
+    .full img {
+        margin: 0 auto 102px auto;
+        max-width: 300px;
+    }
+
+
+    .about_box {
+        flex-direction: column;
+    }
+
+    .about_pic img {
+        margin-right: 0;
+        max-width: 400px;
+    }
+
+    .about_pic{
+        margin: 0 auto 20px auto;
+    }
+
+    .veg_item {
+        max-width: 284px;
+        margin: 30px auto;
+    }
+
+    .menu_icon_1, .menu_icon_2 {
+        display: none;
+    }
+
+    .menu_box a {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .teiki_box {
+        flex-direction: column;
+    }
+
+    .teiki_veg {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .teiki_text {
+        padding-left: 0;
+        width: 80%;
+        margin: 20px auto;
+        padding-bottom: 0;
+    }
+
+    .unnav {
+        flex-direction: column;
+    }
+
+    .access {
+        text-align: center;
+    }
+
+    .access p {
+        padding-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .unnav_container {
+        text-align: center;
     }
 }
